@@ -26,10 +26,10 @@
   team-name: "",
   season: "",
   year: "",
-  cover: none,
-  cover-background: none,
-  count: (current: 1, total: 1),
   theme: (:),
+  count: (current: 1, total: 1),
+  cover-background: none,
+  cover: none,
   body,
 ) = {
   let rules = theme.rules
