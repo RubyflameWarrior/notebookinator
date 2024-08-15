@@ -319,13 +319,14 @@
     },
   )
 
-  return (type: none, body) => {
+  return (type: none, title: none, body) => {
     if not valid-types.contains(type) {
       panic("Entry type '" + str(type) + "' is not valid. Valid types include:" + valid-types-printable)
     }
 
     callback(
       type,
+      title,
       body,
     )
   }
