@@ -296,13 +296,16 @@
     "equation",
 
     "identify",
+    "understand",
     "brainstorm",
-    "decide",
+    "select",
+    "plan",
     "decision",
     "build",
     "program",
     "test",
     "management",
+    "competition",
     "notebook",
   )
 

@@ -26,6 +26,8 @@
     (globals.frontmatter-entries, label("notebook-frontmatter"))
   } else if section == "body" {
     (globals.entries, label("notebook-body"))
+  } else if section == "program" {
+    (globals.program-entries, label("notebook-program"))
   } else if section == "appendix" {
     (globals.appendix-entries, label("notebook-appendix"))
   } else {
@@ -95,3 +97,5 @@
 /// ]
 /// ```
 #let create-appendix-entry = create-entry.with(section: "appendix")
+
+#let create-program-entry = create-entry.with(section: "program")

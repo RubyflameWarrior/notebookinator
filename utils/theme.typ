@@ -124,12 +124,15 @@ All of the constructors also perform checks to ensure that all of the types are 
   return (ctx: (:), body) => {
     let valid-entry-types = (
       "identify",
+      "understand",
       "brainstorm",
-      "decide",
+      "select",
+      "plan",
       "build",
       "program",
       "test",
       "management",
+      "competition",
       "notebook",
     )
 
@@ -169,3 +172,5 @@ All of the constructors also perform checks to ensure that all of the types are 
 /// - callback (function): A function that returns an entry, and takes a named `ctx` argument, and a `body` positional argument.
 /// -> function
 #let make-appendix-entry = make-frontmatter-entry
+
+#let make-program-entry = make-frontmatter-entry

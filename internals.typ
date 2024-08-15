@@ -15,5 +15,6 @@
 
   print-helper("frontmatter", globals.frontmatter-entries)
   print-helper("body", globals.entries)
+  print-helper("program", globals.program-entries)
   print-helper("appendix", globals.appendix-entries)
 }
