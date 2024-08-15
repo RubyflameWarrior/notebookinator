@@ -27,6 +27,8 @@
   season: "",
   year: "",
   cover: none,
+  cover-background: none,
+  count: (current: 1, total: 1),
   theme: (:),
   body,
 ) = {
@@ -46,6 +48,7 @@
   }
   page(
     margin: 0pt,
+    background: cover-background,
     cover-content,
   )
 
