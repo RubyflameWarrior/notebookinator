@@ -27,7 +27,7 @@
   season: "",
   year: "",
   theme: (:),
-  count: (current: 1, total: 1),
+  count: (:),
   cover-background: none,
   cover: none,
   body,
