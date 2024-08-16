@@ -37,6 +37,13 @@
           selector(<notebook-appendix>),
         ),
       )
+    } else if type == "program" {
+      (
+        globals.program-entries,
+        query(
+          selector(<notebook-program>),
+        ),
+      )
     } else {
       panic("No valid entry type selected.")
     }
@@ -58,11 +65,13 @@
     let frontmatter-entries = helper("frontmatter")
     let body-entries = helper("body")
     let appendix-entries = helper("appendix")
+    let program-entries = helper("program")
 
     callback(
       frontmatter-entries,
       body-entries,
       appendix-entries,
+      program-entries,
     )
   }
 }

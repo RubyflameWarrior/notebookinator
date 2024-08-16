@@ -39,6 +39,7 @@ All of the constructors also perform checks to ensure that all of the types are 
   frontmatter-entry: none,
   body-entry: none,
   appendix-entry: none,
+  program-entry: none,
 ) = {
   for input in (
     rules,
@@ -46,6 +47,7 @@ All of the constructors also perform checks to ensure that all of the types are 
     frontmatter-entry,
     body-entry,
     appendix-entry,
+    program-entry,
   ) {
     assert.eq(
       type(input),
@@ -59,6 +61,7 @@ All of the constructors also perform checks to ensure that all of the types are 
     frontmatter-entry: frontmatter-entry,
     body-entry: body-entry,
     appendix-entry: appendix-entry,
+    program-entry: program-entry,
   )
 }
 
