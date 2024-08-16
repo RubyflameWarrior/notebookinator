@@ -40,6 +40,7 @@
       team-name: team-name,
       season: season,
       year: year,
+      count: count,
     )
 
     (theme.cover)(ctx: ctx)
