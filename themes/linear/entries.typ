@@ -190,3 +190,38 @@
 
   body
 })
+
+#let program-entry = utils.make-program-entry((
+  ctx,
+  body,
+) => {
+  show: page.with(header: [
+    #set text(size: 25pt)
+    #set line(stroke: 1.5pt)
+    #align(
+      center + horizon,
+      grid(
+        columns: (
+          1fr,
+          auto,
+          1fr,
+        ),
+        [
+          #line(length: 100%)
+        ],
+        [
+          #h(20pt)
+          #ctx.title
+          #h(20pt)
+        ],
+        [
+          #line(length: 100%)
+        ],
+      ),
+    )
+  ])
+
+  set-border(ctx.type)
+
+  body
+})

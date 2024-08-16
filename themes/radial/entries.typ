@@ -102,3 +102,12 @@
 
   body
 })
+
+#let program-entry = utils.make-program-entry((ctx, body) => {
+  show: page.with(
+    header: title(ctx.title),
+    footer: align(right, context counter(page).display()),
+  )
+
+  body
+})

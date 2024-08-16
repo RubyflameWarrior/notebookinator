@@ -1,5 +1,5 @@
 #import "./rules.typ": rules
-#import "./entries.typ": cover, frontmatter-entry, body-entry, appendix-entry
+#import "./entries.typ": cover, frontmatter-entry, body-entry, appendix-entry, program-entry
 #import "./components/components.typ"
 #import "./colors.typ"
 
@@ -11,4 +11,5 @@
   frontmatter-entry: frontmatter-entry,
   body-entry: body-entry,
   appendix-entry: appendix-entry,
+  program-entry: program-entry
 )

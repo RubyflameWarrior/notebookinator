@@ -63,6 +63,23 @@
 })
 }
 
+#let program-entry = utils.make-program-entry((ctx, body) => {
+  show: page.with(
+    header: [
+      = #ctx.title
+      #box(
+        width: 1fr,
+        line(length: 100%),
+      ) ],
+    footer: align(
+      center,
+      context counter(page).display("i"),
+    ),
+  )
+  body
+})
+}
+
 #let default-theme = utils.make-theme(
   // Global show rules
   rules: rules,
@@ -71,4 +88,5 @@
   frontmatter-entry: frontmatter-entry,
   body-entry: body-entry,
   appendix-entry: appendix-entry,
+  program-entry: program-entry
 )
